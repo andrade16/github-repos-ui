@@ -1,12 +1,14 @@
+@import "src/utils/variables";
+
 .card {
-  position: relative;
   display: flex;
+  position: relative;
   flex-direction: column;
   min-width: 0;
-  background-color: #fff;
+  background-color: $white;
   background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
+  border: $light-border;
+  border-radius: $small-border-radius;
 
   .card-icon,
   .card-subicon {
@@ -37,7 +39,7 @@
       margin-bottom: 1rem;
 
       .card-link {
-        color: #007bff;
+        color: $blue;
         text-decoration: none;
         background-color: transparent;
       }
@@ -45,10 +47,10 @@
 
     .card-action {
       cursor: pointer;
-      color: #fff;
-      background-color: #007bff;
-      border-color: #007bff;
-      border-radius: 0.25rem;
+      color: $white;
+      background-color: $blue;
+      border-color: $blue;
+      border-radius: $small-border-radius;
       height: 5vh;
       width: 10vw;
       min-width: 128px;

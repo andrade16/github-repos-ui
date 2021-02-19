@@ -1,6 +1,6 @@
 .container {
   height: 90vh;
-  margin: 3rem;
+  margin: 4rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-template-rows: repeat(3, 1fr);
@@ -10,4 +10,9 @@
 .spacer {
   width: 100%;
   height: 10vh;
+}
+
+.scroll-top-container {
+  display: flex;
+  justify-content: flex-end;
 }

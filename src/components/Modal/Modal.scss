@@ -1,3 +1,5 @@
+@import "src/utils/variables";
+
 .modal {
   position: fixed;
   left: 0;
@@ -24,7 +26,7 @@
   flex-direction: column;
   width: 500px;
   min-height: 230px;
-  background-color: #fff;
+  background-color: $white;
   transform: translateY(-200px);
   transition: all 0.3s ease-in-out;
 
@@ -51,14 +53,14 @@
   .modal-footer {
     width: 96%;
     border-top: 1px solid #eee;
-    background-color: white;
+    background-color: $white;
 
     .modal-button {
-      color: #fff;
-      background-color: #dc3545;
-      border-color: #dc3545;
-      outline-color: #dc3545;
-      border-radius: 0.25rem;
+      color: $white;
+      background-color: $red;
+      border-color: $red;
+      outline-color: $red;
+      border-radius: $small-border-radius;
       height: 5vh;
       width: 10vw;
       min-width: 128px;

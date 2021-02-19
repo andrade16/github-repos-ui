@@ -5,7 +5,7 @@ import "./EmptyDisplay.scss";
 const EmptyDisplay = ({ message }) => {
   return (
     <div className="empty-display-container">
-      <ImWarning style={{ width: 150, height: 150 }} />
+      <ImWarning id="warning-icon" />
       <div className="empty-display-message">{message}</div>
     </div>
   );
