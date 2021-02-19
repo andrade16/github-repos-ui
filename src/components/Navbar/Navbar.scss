@@ -1,0 +1,24 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px 0 10px;
+  width: 100%;
+  min-height: 10vh;
+  box-sizing: border-box;
+  background-color: #24292e;
+  transition: all 0.7s ease-in;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  box-shadow: 0 0 15px 0 rgba(0,0,0,0.51);
+
+  .logo {
+    cursor: pointer;
+  }
+}
+
+.navigation {
+  /*your navigation styles*/
+}
