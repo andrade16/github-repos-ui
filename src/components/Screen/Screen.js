@@ -6,11 +6,12 @@ import Navbar from "../Navbar/Navbar";
 import Loader from "../Loader/Loader";
 import Card from "../Card/Card";
 import Modal from "../Modal/Modal";
+import EmptyDisplay from "../EmptyDisplay/EmptyDisplay";
 import "./Screen.scss";
 
 const Screen = () => {
   const [repos, setRepos] = useState([]);
-  const [commits, setCommits] = useState(false);
+  const [commits, setCommits] = useState([]);
   const [show, setShow] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
@@ -23,7 +24,6 @@ const Screen = () => {
   }, []);
 
   const handleCardClick = (dataObj) => {
-    console.log("DATA:obj: ", dataObj);
     setShow(true);
     setIsLoading(true);
     getCommits(dataObj).then((data) => {
@@ -57,6 +57,15 @@ const Screen = () => {
     ));
   }
 
+  let modalContent;
+  if (isLoading) {
+    modalContent = <Loader message="Getting commits..." />;
+  } else if (commits.length > 0) {
+    modalContent = <div>{JSON.stringify(commits)}</div>;
+  } else {
+    modalContent = <EmptyDisplay message="No recent commits to display" />;
+  }
+
   return (
     <div>
       <Navbar />
@@ -64,7 +73,7 @@ const Screen = () => {
       <div className="container">
         {content}
         <Modal show={show} onClose={onModalClose} header="Recent Commits">
-          {"Test"}
+          {modalContent}
         </Modal>
       </div>
     </div>
