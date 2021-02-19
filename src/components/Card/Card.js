@@ -22,12 +22,7 @@ const Card = ({
   return (
     <>
       <div className="card">
-        <Avatar
-          src={avatarUrl}
-          width={150}
-          height={150}
-          icon={icon}
-        />
+        <Avatar src={avatarUrl} width={150} height={150} icon={icon} />
         <div className="card-subicon">
           {subIcon} {subtitle}
         </div>

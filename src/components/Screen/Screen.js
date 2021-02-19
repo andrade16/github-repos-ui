@@ -5,6 +5,7 @@ import { getStarredRepos, getCommits } from "../../services/githubService";
 import Navbar from "../Navbar/Navbar";
 import Loader from "../Loader/Loader";
 import Card from "../Card/Card";
+import Modal from "../Modal/Modal";
 import "./Screen.scss";
 
 const Screen = () => {
@@ -22,12 +23,19 @@ const Screen = () => {
   }, []);
 
   const handleCardClick = (dataObj) => {
+    console.log("DATA:obj: ", dataObj);
     setShow(true);
     setIsLoading(true);
     getCommits(dataObj).then((data) => {
       setCommits(data);
       setIsLoading(false);
     });
+  };
+
+  const onModalClose = (event) => {
+    event.preventDefault();
+    setShow(false);
+    setCommits([]);
   };
 
   let content = <Loader message="Loading..." />;
@@ -53,7 +61,12 @@ const Screen = () => {
     <div>
       <Navbar />
       <div className="spacer">&nbsp;</div>
-      <div className="container">{content}</div>
+      <div className="container">
+        {content}
+        <Modal show={show} onClose={onModalClose} header="Recent Commits">
+          {"Test"}
+        </Modal>
+      </div>
     </div>
   );
 };

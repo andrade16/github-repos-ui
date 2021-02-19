@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modal Renders Modal correctly 1`] = `
+<div
+  className="modal show"
+  onClick={[Function]}
+>
+  <div
+    className="modal-content"
+    onClick={[Function]}
+  >
+    <div
+      className="modal-header"
+    >
+      <h4
+        className="modal-title"
+      >
+        Recent Commits
+      </h4>
+    </div>
+    <div
+      className="modal-body"
+    />
+    <div
+      className="modal-footer"
+    >
+      <button
+        className="modal-button"
+        onClick={[Function]}
+      >
+        Close
+      </button>
+    </div>
+  </div>
+</div>
+`;
