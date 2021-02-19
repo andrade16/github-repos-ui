@@ -15,7 +15,6 @@ const Card = ({
   onClick,
 }) => {
   const onCommitClick = () => {
-    console.log(dataObj);
     onClick(dataObj);
   };
 

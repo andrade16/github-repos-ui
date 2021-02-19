@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListItem Renders ListItem correctly 1`] = `
+<li
+  className="list-item"
+>
+  <div
+    className="titles-container"
+  >
+    <div
+      className="avatar-title-container"
+    >
+      <div
+        className="avatar"
+      >
+        <img
+          className="avatar-image"
+          src="https://avatars.githubusercontent.com/u/63889819?v=4"
+          style={
+            Object {
+              "height": 30,
+              "width": 30,
+            }
+          }
+        />
+      </div>
+      <div
+        className="title"
+      >
+        nhcarrigan
+      </div>
+    </div>
+    <div
+      className="subtitle"
+    >
+      commited 12 hours ago
+    </div>
+  </div>
+  <div
+    className="content-container"
+  >
+    test
+  </div>
+</li>
+`;

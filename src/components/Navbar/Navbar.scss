@@ -14,11 +14,20 @@
   z-index: 1;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.51);
 
-  .logo {
+  .logo  {
     cursor: pointer;
   }
+
+  .navigation {
+    width: 200px;
+    display: flex;
+    justify-content: space-evenly;
+
+    a {
+      cursor: pointer;
+    }
+
+  }
+
 }
 
-.navigation {
-  /*your navigation styles*/
-}

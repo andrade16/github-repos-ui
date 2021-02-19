@@ -7,6 +7,8 @@ import Loader from "../Loader/Loader";
 import Card from "../Card/Card";
 import Modal from "../Modal/Modal";
 import EmptyDisplay from "../EmptyDisplay/EmptyDisplay";
+import List from "../List/List";
+import ScrollArrow from "../ScrollArrow/ScrollArrow";
 import "./Screen.scss";
 
 const Screen = () => {
@@ -57,11 +59,12 @@ const Screen = () => {
     ));
   }
 
+
   let modalContent;
   if (isLoading) {
     modalContent = <Loader message="Getting commits..." />;
   } else if (commits.length > 0) {
-    modalContent = <div>{JSON.stringify(commits)}</div>;
+    modalContent = <List data={commits} />;
   } else {
     modalContent = <EmptyDisplay message="No recent commits to display" />;
   }
@@ -75,6 +78,9 @@ const Screen = () => {
         <Modal show={show} onClose={onModalClose} header="Recent Commits">
           {modalContent}
         </Modal>
+      </div>
+      <div style={{display: 'flex', justifyContent: 'flex-end'}}>
+        <ScrollArrow/>
       </div>
     </div>
   );

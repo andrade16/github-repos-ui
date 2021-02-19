@@ -7,6 +7,7 @@ const Avatar = ({ src, width, height, icon }) => {
     inner = (
       <img
         src={src}
+        alt="avatar-image"
         style={{ width: width, height: height }}
         className="avatar-image"
       />

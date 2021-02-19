@@ -1,0 +1,36 @@
+.list-item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  margin: 5px;
+
+  .titles-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 4px;
+
+    .avatar-title-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .title,
+    .subtitle {
+      margin: 5px;
+    }
+
+    .title {
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .subtitle {
+      font-size: 12px;
+    }
+  }
+
+  .content-container {
+    padding: 4px;
+    font-size: 12px;
+  }
+}
