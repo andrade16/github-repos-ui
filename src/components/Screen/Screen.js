@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { FaGithub } from "react-icons/fa";
-import { AiFillStar, AiOutlineStar } from "react-icons/ai";
-import {BsStar, BsFillStarFill} from "react-icons/bs";
+import {BsFillStarFill} from "react-icons/bs";
 import { getStarredRepos, getCommits } from "../../services/githubService";
 import Navbar from "../Navbar/Navbar";
 import Loader from "../Loader/Loader";

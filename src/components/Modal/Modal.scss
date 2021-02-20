@@ -38,9 +38,9 @@
   .modal-header {
     border-bottom: 1px solid #eee;
 
-    .modal-title {
-      margin: 0;
-    }
+    //.modal-title {
+    //  margin: 0;
+    //}
   }
 
   .modal-body {
@@ -56,6 +56,7 @@
     background-color: $white;
 
     .modal-button {
+      cursor: pointer;
       color: $white;
       background-color: $red;
       border-color: $red;
@@ -64,7 +65,7 @@
       height: 5vh;
       width: 10vw;
       min-width: 128px;
-      cursor: pointer;
+      min-height: 31px;
     }
   }
 }

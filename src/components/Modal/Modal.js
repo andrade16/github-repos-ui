@@ -1,4 +1,5 @@
 import React from "react";
+import Title from "../Title/Title";
 import "./Modal.scss";
 
 const Modal = ({ children, show, header, onClose }) => {
@@ -9,7 +10,8 @@ const Modal = ({ children, show, header, onClose }) => {
         onClick={(event) => event.stopPropagation()}
       >
         <div className="modal-header">
-          <h4 className="modal-title">{header}</h4>
+            <Title title={header} style={{margin: 0}}/>
+          {/*<h4 className="modal-title">{header}</h4>*/}
         </div>
         <div className="modal-body">{children}</div>
         <div className="modal-footer">
