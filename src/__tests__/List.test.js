@@ -27,8 +27,8 @@ const mockCommitObjs = [
   },
 ];
 
-describe("List", () => {
-  it("Renders List correctly", () => {
+describe("<List/>", () => {
+  it("Renders <List/> correctly", () => {
     const tree = renderer.create(<List data={mockCommitObjs} />).toJSON();
     expect(tree).toMatchSnapshot();
   });

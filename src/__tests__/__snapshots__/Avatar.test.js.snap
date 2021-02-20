@@ -1,6 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Avatar Renders Avatar with icon correctly if src isn't provided 1`] = `
+exports[`<Avatar/> Renders <Avatar/> with src correctly 1`] = `
+<div
+  className="avatar"
+>
+  <img
+    alt="avatar-image"
+    className="avatar-image"
+    src="https://avatars.githubusercontent.com/u/16903644?v=4"
+    style={
+      Object {
+        "height": 150,
+        "width": 150,
+      }
+    }
+  />
+</div>
+`;
+
+exports[`<Avatar/> Renders Avatar with icon correctly if src isn't provided 1`] = `
 <div
   className="avatar"
 >
@@ -29,22 +47,5 @@ exports[`Avatar Renders Avatar with icon correctly if src isn't provided 1`] = `
       />
     </svg>
   </div>
-</div>
-`;
-
-exports[`Avatar Renders Avatar with src correctly 1`] = `
-<div
-  className="avatar"
->
-  <img
-    className="avatar-image"
-    src="https://avatars.githubusercontent.com/u/16903644?v=4"
-    style={
-      Object {
-        "height": 150,
-        "width": 150,
-      }
-    }
-  />
 </div>
 `;

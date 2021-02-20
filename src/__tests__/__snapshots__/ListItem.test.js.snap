@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ListItem Renders ListItem correctly 1`] = `
+exports[`<ListItem/> Renders <ListItem/> correctly 1`] = `
 <li
   className="list-item"
 >
@@ -14,6 +14,7 @@ exports[`ListItem Renders ListItem correctly 1`] = `
         className="avatar"
       >
         <img
+          alt="avatar-image"
           className="avatar-image"
           src="https://avatars.githubusercontent.com/u/63889819?v=4"
           style={
@@ -33,7 +34,7 @@ exports[`ListItem Renders ListItem correctly 1`] = `
     <div
       className="subtitle"
     >
-      commited 12 hours ago
+      commited a day ago
     </div>
   </div>
   <div

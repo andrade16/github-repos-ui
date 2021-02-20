@@ -1,19 +1,18 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`EmptyDisplay Renders EmptyDisplay correctly 1`] = `
+exports[`<EmptyDisplay/> Renders <EmptyDisplay/> correctly 1`] = `
 <div
   className="empty-display-container"
 >
   <svg
     fill="currentColor"
     height="1em"
+    id="warning-icon"
     stroke="currentColor"
     strokeWidth="0"
     style={
       Object {
         "color": undefined,
-        "height": 150,
-        "width": 150,
       }
     }
     version="1.1"

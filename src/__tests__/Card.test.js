@@ -14,8 +14,8 @@ const mockDataObj = {
   },
 };
 
-describe("Card", () => {
-  it("Renders Card correctly", () => {
+describe("<Card/>", () => {
+  it("Renders <Card/> correctly", () => {
     const tree = renderer
       .create(
         <Card

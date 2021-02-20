@@ -5,8 +5,8 @@ import Avatar from "../components/Avatar/Avatar";
 
 const mockSrcUrl = "https://avatars.githubusercontent.com/u/16903644?v=4";
 
-describe("Avatar", () => {
-  it("Renders Avatar with src correctly", () => {
+describe("<Avatar/>", () => {
+  it("Renders <Avatar/> with src correctly", () => {
     const tree = renderer
       .create(<Avatar src={mockSrcUrl} width={150} height={150} />)
       .toJSON();

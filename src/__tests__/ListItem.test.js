@@ -15,8 +15,8 @@ const mockCommitObj = {
   },
 };
 
-describe("ListItem", () => {
-  it("Renders ListItem correctly", () => {
+describe("<ListItem/>", () => {
+  it("Renders <ListItem/> correctly", () => {
     const tree = renderer
       .create(
         <ListItem

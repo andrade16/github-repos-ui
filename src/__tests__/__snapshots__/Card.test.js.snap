@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Card Renders Card correctly 1`] = `
+exports[`<Card/> Renders <Card/> correctly 1`] = `
 <div
   className="card"
 >
@@ -8,6 +8,7 @@ exports[`Card Renders Card correctly 1`] = `
     className="avatar"
   >
     <img
+      alt="avatar-image"
       className="avatar-image"
       src="https://avatars.githubusercontent.com/u/16903644?v=4"
       style={

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Modal Renders Modal correctly 1`] = `
+exports[`<Modal/> Renders <Modal/> correctly 1`] = `
 <div
   className="modal show"
   onClick={[Function]}

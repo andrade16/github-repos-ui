@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`List Renders List correctly 1`] = `
+exports[`<List/> Renders <List/> correctly 1`] = `
 <ul
   className="list-container"
 >
@@ -17,6 +17,7 @@ exports[`List Renders List correctly 1`] = `
           className="avatar"
         >
           <img
+            alt="avatar-image"
             className="avatar-image"
             src="https://avatars.githubusercontent.com/u/63889819?v=4"
             style={
@@ -36,7 +37,7 @@ exports[`List Renders List correctly 1`] = `
       <div
         className="subtitle"
       >
-        committed 12 hours ago
+        committed a day ago
       </div>
     </div>
     <div
@@ -58,6 +59,7 @@ exports[`List Renders List correctly 1`] = `
           className="avatar"
         >
           <img
+            alt="avatar-image"
             className="avatar-image"
             src="https://avatars.githubusercontent.com/u/63889819?v=5"
             style={
@@ -77,7 +79,7 @@ exports[`List Renders List correctly 1`] = `
       <div
         className="subtitle"
       >
-        committed 12 hours ago
+        committed a day ago
       </div>
     </div>
     <div

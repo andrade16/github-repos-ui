@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { FaGithub } from "react-icons/fa";
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
-import {BsStar} from "react-icons/bs";
+import {BsStar, BsFillStarFill} from "react-icons/bs";
 import { getStarredRepos, getCommits } from "../../services/githubService";
 import Navbar from "../Navbar/Navbar";
 import Loader from "../Loader/Loader";
@@ -52,8 +52,8 @@ const Screen = () => {
         buttonLabel={"View commits"}
         buttonToolTip={"View commits made in the last 24 hours"}
         avatarUrl={repo.owner.avatar_url}
-        icon={<FaGithub style={{ width: 150, height: 150, marginTop: 5 }} />}
-        subIcon={<BsStar/>}
+        icon={<FaGithub size={150} style={{ marginTop: 5 }} />}
+        subIcon={<BsFillStarFill size={15} style={{fill: 'yellow'}}/>}
         dataObj={repo}
         onClick={handleCardClick}
       />
