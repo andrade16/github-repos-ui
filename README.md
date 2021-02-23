@@ -33,9 +33,9 @@ Below you'll find some screenshots that highlight the main components used to bu
 
 ### Main Repo Screen
 
-This is the main application view that displays repository cards in addition to the navbar and scroll arrow. 
-The user can press the scroll arrow to move them back to the top of the repository list after scrolling down. 
-On the Card component, you'll see the title, star count, avatar photo, and url of the repository.   
+This is the main application view that displays repository cards in addition to the navbar and scroll arrow.
+The user can press the scroll arrow to move them back to the top of the repository list after scrolling down.
+On the Card component, you'll see the title, star count, avatar photo, and url of the repository.
 
 ![Component Design Image](readme_assets/card_display.png)
 
@@ -54,3 +54,11 @@ If the modal is triggered for a given repository and there is no data to display
 
 On the application's initial boot up and while fetching commits, the user will be presented with a Loading indicator. This provides feedback to the user to let them know that some external data processing is occurring.
 ![Component Design Image](readme_assets/loading_display.png)
+
+## Additional Notes
+
+- To inform the user that the commits displayed are only commits made within the past 24 hours, I included a message in the form of a `title` attribute on [View Commits] button.
+- No component libraries are used in this project.
+- [Moment](https://momentjs.com/) is used for some of the date functionality.
+- I used some icons from [react-icons](https://react-icons.github.io/react-icons) for random areas of the application. For example, in the Navbar component.
+- The application is mobile friendly.
