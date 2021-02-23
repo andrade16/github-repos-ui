@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { FaGithub } from "react-icons/fa";
 import { FiStar } from "react-icons/fi";
 import { getStarredRepos, getCommits } from "../../services/githubService";
+import { formatDateByDay } from "../../utils/helpers";
 import Navbar from "../Navbar/Navbar";
 import Loader from "../Loader/Loader";
 import Card from "../Card/Card";
@@ -9,7 +10,6 @@ import Modal from "../Modal/Modal";
 import ScrollArrow from "../ScrollArrow/ScrollArrow";
 import List from "../List/List";
 import EmptyDisplay from "../EmptyDisplay/EmptyDisplay";
-import { formatDateByDay } from "../../utils/helpers";
 import moment from "moment";
 import "./RepoScreen.scss";
 
