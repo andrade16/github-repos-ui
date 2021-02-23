@@ -1,5 +1,9 @@
 import moment from "moment";
 
-export function formatDate(date) {
+export function formatDateFromNow(date) {
   return moment.utc(date).local().fromNow();
+}
+
+export function formatDateByDay(date) {
+  return moment.utc(date).local().format("MMM D, YYYY");
 }

@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Title/> Renders <Title/> correctly 1`] = `
+<h4
+  className="title"
+  style={
+    Object {
+      "margin": 0,
+    }
+  }
+>
+  Recent Commits
+</h4>
+`;

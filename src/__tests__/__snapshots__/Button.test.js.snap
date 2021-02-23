@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button/> Renders <Button/> correctly 1`] = `
+<button
+  className="button"
+  onClick={[Function]}
+  style={
+    Object {
+      "backgroundColor": "#007bff",
+      "borderColor": "#007bff",
+      "outlineColor": "#007bff",
+    }
+  }
+  title="tooltip Test"
+>
+  View Commits
+</button>
+`;

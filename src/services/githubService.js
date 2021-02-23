@@ -3,7 +3,7 @@ import moment from "moment";
 const baseGithubUrl = "https://api.github.com";
 const headers = {
   "Content-type": "application/json; charset=UTF-8",
-  Accept: "application/vnd.github.v3+json",
+  "Accept": "application/vnd.github.v3+json",
 };
 
 export async function getStarredRepos() {

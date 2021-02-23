@@ -29,6 +29,11 @@ exports[`<Navbar/> Renders <Navbar/> correctly 1`] = `
       />
     </svg>
   </a>
+  <h2
+    className="app-title"
+  >
+    Top 100 Repositories
+  </h2>
   <nav
     className="navigation"
   >

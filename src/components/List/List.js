@@ -1,6 +1,6 @@
 import React from "react";
 import ListItem from "./ListItem";
-import { formatDate } from "../../utils/helpers";
+import { formatDateFromNow } from "../../utils/helpers";
 import "./List.scss";
 
 const List = ({ data }) => {
@@ -10,7 +10,9 @@ const List = ({ data }) => {
       <ListItem
         key={commit.sha}
         title={commit.author.login}
-        subtitle={`committed ${formatDate(commit.commit.committer.date)}`}
+        subtitle={`committed ${formatDateFromNow(
+          commit.commit.committer.date
+        )}`}
         content={commit.commit.message}
         avatarSrc={commit.author.avatar_url}
       />

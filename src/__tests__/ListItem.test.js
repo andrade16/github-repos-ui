@@ -1,7 +1,7 @@
 import React from "react";
 import renderer from "react-test-renderer";
 import ListItem from "../components/List/ListItem";
-import { formatDate } from "../utils/helpers";
+import { formatDateFromNow } from "../utils/helpers";
 
 const mockCommitObj = {
   sha: "950841c25ea005f30050cdac545f87933cea038a",
@@ -21,7 +21,7 @@ describe("<ListItem/>", () => {
       .create(
         <ListItem
           title={mockCommitObj.author.login}
-          subtitle={`commited ${formatDate(
+          subtitle={`commited ${formatDateFromNow(
             mockCommitObj.commit.committer.date
           )}`}
           content={mockCommitObj.commit.message}

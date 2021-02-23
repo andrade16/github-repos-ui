@@ -9,6 +9,8 @@ import Modal from "../Modal/Modal";
 import ScrollArrow from "../ScrollArrow/ScrollArrow";
 import List from "../List/List";
 import EmptyDisplay from "../EmptyDisplay/EmptyDisplay";
+import { formatDateByDay } from "../../utils/helpers";
+import moment from "moment";
 import "./RepoScreen.scss";
 
 const RepoScreen = () => {
@@ -16,6 +18,7 @@ const RepoScreen = () => {
   const [commits, setCommits] = useState([]);
   const [show, setShow] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const today = moment().toISOString(true);
 
   useEffect(() => {
     setIsLoading(true);
@@ -34,15 +37,14 @@ const RepoScreen = () => {
     });
   };
 
-  const onModalClose = (event) => {
-    event.preventDefault();
+  const onModalClose = () => {
     setShow(false);
     setCommits([]);
   };
 
   let content = <Loader message="Loading..." />;
   if (repos.length) {
-    content = repos.map((repo, index) => (
+    content = repos.map((repo) => (
       <Card
         key={repo.id}
         title={repo.full_name}
@@ -50,7 +52,7 @@ const RepoScreen = () => {
         subtitle={`Stars: ${repo.stargazers_count}`}
         avatarUrl={repo.owner.avatar_url}
         icon={<FaGithub size={150} style={{ marginTop: 5 }} />}
-        subIcon={<FiStar size={15} style={{ fill: "yellow" }} />}
+        subIcon={<FiStar size={15} fill="yellow" />}
         dataObj={repo}
         onClick={handleCardClick}
       />
@@ -74,8 +76,11 @@ const RepoScreen = () => {
       <div className="container">
         {content}
 
-        {/*<Modal show={show} onClose={onModalClose} header="Recent Commits" isLoading={isLoading} commits={commits}/>*/}
-        <Modal show={show} onClose={onModalClose} header="Recent Commits">
+        <Modal
+          show={show}
+          onClose={onModalClose}
+          header={`Commits on ${formatDateByDay(today)}`}
+        >
           {modalContent}
         </Modal>
       </div>

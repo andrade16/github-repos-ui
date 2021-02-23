@@ -2,20 +2,8 @@ import React from "react";
 import Title from "../Title/Title";
 import Button from "../Button/Button";
 import "./Modal.scss";
-import Loader from "../Loader/Loader";
-import List from "../List/List";
-import EmptyDisplay from "../EmptyDisplay/EmptyDisplay";
 
-const Modal = ({ children, show, header, onClose, isLoading, commits }) => {
-  // let modalContent;
-  // if (isLoading) {
-  //     modalContent = <Loader message="Getting commits..." />;
-  // } else if (commits.length > 0) {
-  //     modalContent = <List data={commits} />;
-  // } else {
-  //     modalContent = <EmptyDisplay message="No recent commits to display" />;
-  // }
-
+const Modal = ({ children, show, header, onClose }) => {
   return (
     <div className={`modal ${show ? "show" : ""}`} onClick={onClose}>
       <div
