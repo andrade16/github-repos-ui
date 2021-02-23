@@ -10,13 +10,23 @@
   border: $light-border;
   border-radius: $small-border-radius;
 
-  .card-icon,
-  .card-subicon {
-    display: flex;
-    justify-content: center;
+  .avatar {
+    margin-top: 10px;
   }
 
-  .card-subicon {
+  .card-icon,
+  .card-subtitle {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+
+    .icon {
+      margin-right: 6px;
+      margin-top: 3px;
+    }
+  }
+
+  .card-subtitle {
     padding: 10px;
     align-items: center;
   }
@@ -30,9 +40,9 @@
     background-color: aliceblue;
     word-wrap: break-word;
 
-    //.card-title {
-    //  margin-bottom: 0.75rem;
-    //}
+    .title {
+      margin-top: 0px;
+    }
 
     .card-content {
       margin-top: 0;
@@ -43,18 +53,6 @@
         text-decoration: none;
         background-color: transparent;
       }
-    }
-
-    .card-action {
-      cursor: pointer;
-      color: $white;
-      background-color: $blue;
-      border-color: $blue;
-      border-radius: $small-border-radius;
-      height: 5vh;
-      width: 10vw;
-      min-width: 128px;
-      min-height: 31px;
     }
   }
 }

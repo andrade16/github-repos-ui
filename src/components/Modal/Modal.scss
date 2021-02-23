@@ -25,6 +25,7 @@
   display: flex;
   flex-direction: column;
   width: 500px;
+  min-width: 300px;
   min-height: 230px;
   background-color: $white;
   transform: translateY(-200px);
@@ -37,10 +38,6 @@
 
   .modal-header {
     border-bottom: 1px solid #eee;
-
-    //.modal-title {
-    //  margin: 0;
-    //}
   }
 
   .modal-body {
@@ -54,19 +51,6 @@
     width: 96%;
     border-top: 1px solid #eee;
     background-color: $white;
-
-    .modal-button {
-      cursor: pointer;
-      color: $white;
-      background-color: $red;
-      border-color: $red;
-      outline-color: $red;
-      border-radius: $small-border-radius;
-      height: 5vh;
-      width: 10vw;
-      min-width: 128px;
-      min-height: 31px;
-    }
   }
 }
 

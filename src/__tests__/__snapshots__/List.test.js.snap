@@ -37,7 +37,7 @@ exports[`<List/> Renders <List/> correctly 1`] = `
       <div
         className="subtitle"
       >
-        committed a day ago
+        committed 4 days ago
       </div>
     </div>
     <div
@@ -79,7 +79,7 @@ exports[`<List/> Renders <List/> correctly 1`] = `
       <div
         className="subtitle"
       >
-        committed a day ago
+        committed 4 days ago
       </div>
     </div>
     <div

@@ -34,7 +34,7 @@ exports[`<ListItem/> Renders <ListItem/> correctly 1`] = `
     <div
       className="subtitle"
     >
-      commited a day ago
+      commited 4 days ago
     </div>
   </div>
   <div

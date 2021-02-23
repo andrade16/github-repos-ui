@@ -10,6 +10,8 @@ const Navbar = () => {
         <GoLogoGithub id="github-icon" />
       </a>
 
+      <h2 className="app-title">{"Top 100 Repositories"}</h2>
+
       <nav className="navigation">
         <a href="mailto:andrade.william61@gmail.com">
           <AiOutlineMail id="email-icon" />

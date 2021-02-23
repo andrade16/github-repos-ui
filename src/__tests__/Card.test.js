@@ -4,7 +4,6 @@ import { FaGithub } from "react-icons/fa";
 import { AiFillStar } from "react-icons/ai";
 import Card from "../components/Card/Card";
 
-
 const mockDataObj = {
   full_name: "test obj",
   html_url: "https://google.com",

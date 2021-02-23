@@ -1,0 +1,12 @@
+@import "src/utils/variables";
+
+.button {
+  cursor: $pointer-cursor;
+  color: $white;
+  border-radius: $small-border-radius;
+  border-style: solid;
+  height: 5vh;
+  width: 10vw;
+  min-width: 128px;
+  min-height: 31px;
+}

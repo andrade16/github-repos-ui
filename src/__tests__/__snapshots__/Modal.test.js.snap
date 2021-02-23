@@ -13,7 +13,12 @@ exports[`<Modal/> Renders <Modal/> correctly 1`] = `
       className="modal-header"
     >
       <h4
-        className="modal-title"
+        className="title"
+        style={
+          Object {
+            "margin": 0,
+          }
+        }
       >
         Recent Commits
       </h4>
@@ -25,8 +30,16 @@ exports[`<Modal/> Renders <Modal/> correctly 1`] = `
       className="modal-footer"
     >
       <button
-        className="modal-button"
+        className="button"
         onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#dc3545",
+            "borderColor": "#dc3545",
+            "outlineColor": "#dc3545",
+          }
+        }
+        title=""
       >
         Close
       </button>

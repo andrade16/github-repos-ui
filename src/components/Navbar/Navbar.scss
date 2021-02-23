@@ -16,8 +16,14 @@
   z-index: 1;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.51);
 
+  .app-title {
+    color: white;
+    margin-left: 28px;
+    margin-right: 28px;
+  }
+
   .logo {
-    cursor: pointer;
+    cursor: $pointer-cursor;
 
     #github-icon {
       color: $white;
@@ -31,8 +37,12 @@
     display: flex;
     justify-content: space-evenly;
 
+    @media (max-width: 340px) {
+      flex-direction: column;
+    }
+
     a {
-      cursor: pointer;
+      cursor: $pointer-cursor;
       #email-icon,
       #linkedin-icon {
         width: 30px;
