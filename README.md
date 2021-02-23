@@ -20,7 +20,7 @@ In your terminal, navigate to the github-repos-ui directory, and from the root f
 
 For this UI project, [Create React App](https://github.com/facebook/create-react-app) was used to get started on development right away.
 Another useful feature was that a testing framework ([Jest](https://jestjs.io/)) is included as well.
-I used snapshot testing to test the output of the components instead of asserting the presence of specific dom elements.
+I used snapshot testing to test the output of the components instead of asserting the presence of specific DOM elements.
 The advantage with snapshot tests is that it's a good way to keep track of a component's characteristics (given a specific input),
 while also asserting correctness during future development of those components.
 
@@ -57,7 +57,7 @@ On the application's initial boot up and while fetching commits, the user will b
 
 ## Additional Notes
 
-- To inform the user that the commits displayed are only commits made within the past 24 hours, I included a message in the form of a `title` attribute on [View Commits] button.
+- To inform the user that the commits displayed are only commits made within the past 24 hours, I included a message in the form of a `title` attribute on the [View Commits] button.
 - No component libraries are used in this project.
 - [Moment](https://momentjs.com/) is used for some of the date functionality.
 - I used some icons from [react-icons](https://react-icons.github.io/react-icons) for random areas of the application. For example, in the Navbar component.

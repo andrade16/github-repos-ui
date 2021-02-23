@@ -5,15 +5,15 @@
   margin: 5px;
 
   .titles-container {
-    display: flex;
+    display: $flex-display;
     flex-direction: row;
     justify-content: space-between;
     padding: 4px;
 
     .avatar-title-container {
-      display: flex;
+      display: $flex-display;
       flex-direction: row;
-      align-items: center;
+      align-items: $content-center;
     }
 
     .title,

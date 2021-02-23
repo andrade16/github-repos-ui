@@ -1,9 +1,9 @@
 @import "src/utils/variables";
 
 .loader-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: $flex-display;
+  flex-direction: $flex-column;
+  align-items: $content-center;
 
   .loader {
     margin-top: 16px;

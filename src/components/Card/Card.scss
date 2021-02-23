@@ -1,10 +1,9 @@
 @import "src/utils/variables";
 
 .card {
-  display: flex;
+  display: $flex-display;
+  flex-direction: $flex-column;
   position: relative;
-  flex-direction: column;
-  min-width: 0;
   background-color: $white;
   background-clip: border-box;
   border: $light-border;
@@ -16,9 +15,8 @@
 
   .card-icon,
   .card-subtitle {
-    display: flex;
-    justify-content: center;
-    font-weight: bold;
+    display: $flex-display;
+    justify-content: $content-center;
 
     .icon {
       margin-right: 6px;
@@ -28,12 +26,13 @@
 
   .card-subtitle {
     padding: 10px;
-    align-items: center;
+    align-items: $content-center;
+    font-weight: bold;
   }
 
   .card-body {
-    display: flex;
-    flex-direction: column;
+    display: $flex-display;
+    flex-direction: $flex-column;
     justify-content: space-between;
     flex: 1 1;
     padding: 1.25rem;

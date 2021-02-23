@@ -4,9 +4,9 @@
   position: fixed;
   width: 64px;
   bottom: 20px;
-  align-items: center;
+  align-items: $content-center;
   height: 20px;
-  justify-content: center;
+  justify-content: $content-center;
   z-index: 1000;
   cursor: $pointer-cursor;
   animation: fadeIn 0.3s;

@@ -1,8 +1,8 @@
 @import "src/utils/variables";
 
 .avatar {
-  display: flex;
-  justify-content: center;
+  display: $flex-display;
+  justify-content: $content-center;
 
   .avatar-image {
     background-size: cover;

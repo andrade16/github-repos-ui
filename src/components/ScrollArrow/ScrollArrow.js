@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Y_OFFSET_THRESHOLD } from "../../utils/constants";
 import { FaArrowCircleUp } from "react-icons/fa";
 import "./ScrollArrow.scss";
 
@@ -6,9 +7,9 @@ const ScrollArrow = () => {
   const [showScroll, setShowScroll] = useState(false);
 
   const checkScrollTop = () => {
-    if (!showScroll && window.pageYOffset > 400) {
+    if (!showScroll && window.pageYOffset > Y_OFFSET_THRESHOLD) {
       setShowScroll(true);
-    } else if (showScroll && window.pageYOffset <= 400) {
+    } else if (showScroll && window.pageYOffset <= Y_OFFSET_THRESHOLD) {
       setShowScroll(false);
     }
   };

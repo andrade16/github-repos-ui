@@ -1,7 +1,9 @@
+@import "src/utils/variables";
+
 .empty-display-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: $flex-display;
+  flex-direction: $flex-column;
+  align-items: $content-center;
 
   #warning-icon {
     width: 150px;

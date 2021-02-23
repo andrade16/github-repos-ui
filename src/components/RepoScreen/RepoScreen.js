@@ -21,6 +21,7 @@ const RepoScreen = () => {
   const today = moment().toISOString(true);
 
   useEffect(() => {
+    // fetch top repos on initial mounting
     setIsLoading(true);
     getStarredRepos().then((data) => {
       setRepos(data.items);
@@ -32,6 +33,7 @@ const RepoScreen = () => {
     setShow(true);
     setIsLoading(true);
     getCommits(dataObj).then((data) => {
+      // fetch commits on button press
       setCommits(data);
       setIsLoading(false);
     });
