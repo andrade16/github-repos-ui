@@ -7,6 +7,7 @@ const headers = {
 };
 
 export async function getStarredRepos() {
+  // fetches the top 100 starred repositories
   try {
     const response = await fetch(
       `${baseGithubUrl}/search/repositories?q=stars:>1&sort=stars&per_page=100`,
@@ -19,6 +20,7 @@ export async function getStarredRepos() {
 }
 
 export async function getCommits(repo) {
+  // fetches commits made in the past 24 hours for a repository
   const owner = repo.owner.login;
   const repository = repo.name;
   const today = moment().toISOString(true);

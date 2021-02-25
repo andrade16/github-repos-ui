@@ -20,7 +20,7 @@ In your terminal, navigate to the github-repos-ui directory, and from the root f
 
 For this UI project, [Create React App](https://github.com/facebook/create-react-app) was used to get started on development right away.
 Another useful feature was that a testing framework ([Jest](https://jestjs.io/)) is included as well.
-I used snapshot testing to test the output of the components instead of asserting the presence of specific DOM elements.
+I used snapshot testing in addition to [Enzyme](https://enzymejs.github.io/enzyme/) to test the output of the components thoroughly.
 The advantage with snapshot tests is that it's a good way to keep track of a component's characteristics (given a specific input),
 while also asserting correctness during future development of those components.
 

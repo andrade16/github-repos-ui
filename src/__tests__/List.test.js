@@ -1,6 +1,10 @@
 import React from "react";
-import renderer from "react-test-renderer";
 import List from "../components/List/List";
+import ListItem from "../components/List/ListItem";
+import Enzyme, { shallow } from "enzyme";
+import Adapter from "enzyme-adapter-react-16";
+
+Enzyme.configure({ adapter: new Adapter() });
 
 const mockCommitObjs = [
   {
@@ -28,8 +32,17 @@ const mockCommitObjs = [
 ];
 
 describe("<List/>", () => {
-  it("Renders <List/> correctly", () => {
-    const tree = renderer.create(<List data={mockCommitObjs} />).toJSON();
-    expect(tree).toMatchSnapshot();
+  let wrapper;
+
+  beforeEach(() => {
+    wrapper = shallow(<List data={mockCommitObjs} />);
+  });
+
+  it("renders ul DOM element", () => {
+    expect(wrapper.find("ul")).toHaveLength(1);
+  });
+
+  it("renders ListItem Component", () => {
+    expect(wrapper.find(ListItem)).toHaveLength(2);
   });
 });
