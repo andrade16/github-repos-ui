@@ -37,7 +37,7 @@
   }
 
   .modal-header {
-    border-bottom: 1px solid #eee;
+    border-bottom: $modal-borders;
   }
 
   .modal-body {
@@ -49,7 +49,7 @@
 
   .modal-footer {
     width: 96%;
-    border-top: 1px solid #eee;
+    border-top: $modal-borders;
     background-color: $white;
   }
 }
