@@ -19,10 +19,8 @@ export async function getStarredRepos() {
   }
 }
 
-export async function getCommits(repo) {
+export async function getCommits(owner, repository) {
   // fetches commits made in the past 24 hours for a repository
-  const owner = repo.owner.login;
-  const repository = repo.name;
   const today = moment().toISOString(true);
   const yesterday = moment(today).subtract(24, "hours").toISOString(true);
 
