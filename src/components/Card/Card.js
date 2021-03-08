@@ -1,7 +1,7 @@
 import React from "react";
 import Avatar from "../Avatar/Avatar";
 import Title from "../Title/Title";
-import Button from "../Button/Button";
+import {Link} from "react-router-dom";
 import "./Card.scss";
 
 const Card = ({
@@ -12,11 +12,7 @@ const Card = ({
   avatarUrl,
   dataObj,
   subIcon,
-  onClick,
 }) => {
-  const onCommitClick = () => {
-    onClick(dataObj);
-  };
 
   return (
     <div className="card">
@@ -32,12 +28,7 @@ const Card = ({
             {link}
           </a>
         </p>
-        <Button
-          label={"View Commits"}
-          color={"#007bff"}
-          tooltip={"View commits made in the last 24 hours"}
-          onClick={onCommitClick}
-        />
+        <Link to={`/commits/${dataObj.owner.login}/${dataObj.name}`} title={"View commits made in the last 24 hours"}>View Commits</Link>
       </div>
     </div>
   );
