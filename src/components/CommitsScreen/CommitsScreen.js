@@ -14,7 +14,7 @@ import './CommitsScreen.scss';
 
 
 const CommitsScreen = () => {
-    let {owner, name} = useParams();
+    const {owner, name} = useParams();
     const [commits, setCommits] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
     const today = moment().toISOString(true);
